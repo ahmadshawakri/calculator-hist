@@ -1,0 +1,4 @@
+.buttonBox {
+  display: grid;
+  grid-gap: .625rem;
+}

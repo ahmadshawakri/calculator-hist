@@ -1,0 +1,14 @@
+.resultBox {
+  min-width: 17.5625rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.resultBox h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgba(0, 177, 216, 0.8);
+}
