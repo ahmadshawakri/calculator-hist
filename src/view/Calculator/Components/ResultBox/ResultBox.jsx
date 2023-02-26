@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./ResultBox.module.css";
 
-const ResultBox = () => {
+const ResultBox = ({ value }) => {
   return (
     <div className={classes.resultBox}>
-      <h4>1088</h4>
+      <h4>{value}</h4>
     </div>
   );
 };
