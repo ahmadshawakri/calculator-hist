@@ -51,10 +51,17 @@ const Calculator = () => {
         operationEvaluate();
         break;
       default:
-        setState((prevState) => ({
-          operation: prevState.operation + btnValue,
-          result: prevState.result,
-        }));
+        if (btnValue === "+/-") {
+          setState((prevState) => ({
+            operation: prevState.operation + "-",
+            result: prevState.result,
+          }));
+        } else {
+          setState((prevState) => ({
+            operation: prevState.operation + btnValue,
+            result: prevState.result,
+          }));
+        }
         break;
     }
   };
@@ -65,7 +72,7 @@ const Calculator = () => {
       result: "",
     });
     const leftHistory = history.slice(0, itemIndex + 1);
-    setHistory(leftHistory)
+    setHistory(leftHistory);
   };
 
   return (

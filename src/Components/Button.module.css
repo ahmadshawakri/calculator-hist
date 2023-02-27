@@ -10,6 +10,13 @@
   border-radius: 0.8125rem;
   color: #000;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+.btn:nth-child(1){
+  color: red;
 }
 
 .equalsBtn {
@@ -21,4 +28,6 @@
   );
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 0.8125rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
